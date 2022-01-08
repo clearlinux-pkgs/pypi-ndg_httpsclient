@@ -4,7 +4,7 @@
 #
 Name     : pypi-ndg_httpsclient
 Version  : 0.5.1
-Release  : 58
+Release  : 59
 URL      : https://files.pythonhosted.org/packages/b9/f8/8f49278581cb848fb710a362bfc3028262a82044167684fb64ad068dbf92/ndg_httpsclient-0.5.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/b9/f8/8f49278581cb848fb710a362bfc3028262a82044167684fb64ad068dbf92/ndg_httpsclient-0.5.1.tar.gz
 Summary  : Provides enhanced HTTPS support for httplib and urllib2 using PyOpenSSL
@@ -15,10 +15,6 @@ Requires: pypi-ndg_httpsclient-license = %{version}-%{release}
 Requires: pypi-ndg_httpsclient-python = %{version}-%{release}
 Requires: pypi-ndg_httpsclient-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
-Provides: ndg_httpsclient
-Provides: ndg_httpsclient-python
-Provides: ndg_httpsclient-python3
-BuildRequires : pyOpenSSL
 BuildRequires : pypi(pyasn1)
 BuildRequires : pypi(pyopenssl)
 
@@ -103,7 +99,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641458605
+export SOURCE_DATE_EPOCH=1641682435
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
